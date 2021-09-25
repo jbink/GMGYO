@@ -1,6 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackColor">
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:paddingRight="35dp"
+        android:paddingLeft="35dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="124dp"
+            android:layout_height="25dp"
+            android:background="@drawable/gmgyo"/>
+
+        <EditText
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edit_border_solid"
+            android:layout_centerVertical="true"
+            style="@style/edt_style"
+            android:hint="대리점ID"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edit_border_solid"
+            android:layout_centerVertical="true"
+            style="@style/edt_style"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/login_chk_auto"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/sel_btn_check_box"
+                android:button="@null" />
+
+            <TextView
+                style="@style/txt_style_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:text="비밀번호 저장"
+                android:textColor="#454545"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_25_rect_2262c6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                style="@style/txt_style_medium"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:text="로그인"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/txt_style_medium"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/mainBlueColor"
+                android:text="서비스가입"/>
+
+            <ImageView
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:background="#999"/>
+
+            <TextView
+                style="@style/txt_style_medium"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15dp"
+                android:layout_centerInParent="true"
+                android:textColor="#999"
+                android:text="비밀번호 변경"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -28,4 +28,14 @@
         <item name="android:backgroundDimEnabled">false</item>
     </style>
 
+    <style name="edt_style" parent="txt_style_medium">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/color_ccc</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
 </resources>

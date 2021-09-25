@@ -4,37 +4,47 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <include
+        layout="@layout/layout_header"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="66dp"
         android:paddingLeft="15dp"
-        android:paddingRight="15dp">
+        android:paddingRight="15dp"
+        android:background="@color/mainBackColor">
+        
+        <EditText
+            android:layout_toLeftOf="@id/agency_btn_search"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/edit_border_solid"
+            android:layout_centerVertical="true"
+            style="@style/edt_style"
+            android:hint="대리점ID 선택"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"/>
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_arrow_back"
-            android:layout_centerVertical="true"/>
-
-        <TextView
-            android:layout_centerInParent="true"
-            style="@style/txt_style_medium"
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="normal"
-            android:textSize="18sp"
-            android:textColor="#252525"
-            android:letterSpacing="-0.04"
-            android:lineSpacingExtra="14sp"
-            android:text="GMGYO 대리점 ID 선택"/>
+        <RelativeLayout
+            android:id="@+id/agency_btn_search"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:background="#333"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/search_id"/>
+        </RelativeLayout>
 
     </RelativeLayout>
-
-    <View
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#bbbbbb">
-    </View>
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:divider="#eee"/>
 
 </LinearLayout>

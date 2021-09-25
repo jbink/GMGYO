@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainBackColor"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="60dp"
+            style="@style/txt_style_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="18dp"
+            android:textColor="#252525"
+            android:text="서비스 가입안내"/>
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            style="@style/txt_style_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="14dp"
+            android:textColor="#454545"
+            android:text="@string/agency_info_txt"/>
+        
+        <Button
+            style="@style/txt_style_medium"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#333"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="50dp"
+            android:text="다음"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+</LinearLayout>

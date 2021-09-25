@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GMGYO</string>
+    <string name="agency_info_txt">GMGYO 서비스는 앱 가입 만으로 현금영수증,\n카드결제, 수기결제가 가능하고 결제 대금은\n바로 정산(1초정산)서비스를 통하여 실시간으로\n받을 수 있는 간편 결제 솔루션입니다.\n\n가입 시 바로 카드 결제 서비스를 사용할 수 있으며\n업종이나 결제 한도 선택에 따른 수수료 변경 및\n보증보험 가입 요청이 있을 수 있습니다.</string>
 </resources>
