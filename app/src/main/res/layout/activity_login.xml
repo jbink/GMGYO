@@ -62,7 +62,7 @@
                 android:layout_marginStart="11dp"
                 android:text="비밀번호 저장"
                 android:textColor="#454545"
-                android:textSize="15sp"
+                android:textSize="15dp"
                 android:textStyle="normal" />
         </LinearLayout>
 
