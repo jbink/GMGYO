@@ -11,6 +11,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:paddingBottom="50dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -27,6 +28,7 @@
                     android:layout_centerVertical="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
                     android:orientation="horizontal">
 
                     <CheckBox
@@ -70,6 +72,7 @@
                 android:paddingRight="15dp">
 
                 <LinearLayout
+                    android:gravity="center_vertical"
                     android:layout_centerVertical="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -118,13 +121,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="gone">
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp">
 
@@ -146,6 +142,7 @@
                 android:paddingRight="15dp">
 
                 <EditText
+                    android:id="@+id/signup_edt_phone_number"
                     android:layout_toLeftOf="@id/signup_btn_authcode"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
@@ -205,6 +202,7 @@
                 android:paddingRight="15dp">
 
                 <EditText
+                    android:id="@+id/signup_edt_authcode"
                     android:layout_toLeftOf="@id/signup_btn_authcode_confirm"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
@@ -264,6 +262,7 @@
                 android:paddingRight="15dp">
 
                 <EditText
+                    android:id="@+id/signup_edt_name"
                     android:textColor="@color/mainBlueColor"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
@@ -304,6 +303,7 @@
                 android:paddingRight="15dp">
 
                 <EditText
+                    android:id="@+id/signup_edt_personel_number"
                     android:textColor="@color/mainBlueColor"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
@@ -354,7 +354,6 @@
                     style="@style/edt_style"/>
 
             </RelativeLayout>
-            </LinearLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -388,13 +387,14 @@
                 android:paddingRight="15dp">
 
                 <RadioGroup
+                    android:id="@+id/signup_rg_business"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:weightSum="2">
 
                     <RadioButton
-                        android:id="@+id/rg_btn_food_material"
+                        android:id="@+id/signup_rg_btn_store"
                         style="@style/txt_style_medium"
                         android:layout_width="0dp"
                         android:layout_weight="1"
@@ -408,7 +408,7 @@
 
 
                     <RadioButton
-                        android:id="@+id/rg_btn_store"
+                        android:id="@+id/signup_rg_btn_no_store"
                         style="@style/txt_style_medium"
                         android:layout_width="0dp"
                         android:layout_weight="1"
@@ -450,7 +450,8 @@
                 android:paddingRight="15dp">
 
                 <EditText
-                    android:textColor="@color/mainBlueColor"
+                    android:id="@+id/sign_up_edt_store_number"
+                    android:textColor="@color/color_454545"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:background="@drawable/edit_border_solid"
@@ -462,7 +463,587 @@
                     android:maxLines="1"/>
 
             </RelativeLayout>
+
+            <!-- 상호 -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="상호"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:id="@+id/sign_up_edt_store_name"
+                    android:textColor="@color/color_454545"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_solid"
+                    android:layout_centerVertical="true"
+                    style="@style/edt_style"
+                    android:hint="상호를 입력해주세요"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"/>
+
+            </RelativeLayout>
+
+            <!-- 업종 -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="업종"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:id="@+id/sign_up_edt_category"
+                    android:textColor="@color/color_454545"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_solid"
+                    android:layout_centerVertical="true"
+                    style="@style/edt_style"
+                    android:hint="업종을 입력해주세요"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"/>
+            </RelativeLayout>
+
+            <!-- 취급품목 -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="취급품목"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:id="@+id/sign_up_edt_product"
+                    android:textColor="@color/color_454545"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_solid"
+                    android:layout_centerVertical="true"
+                    style="@style/edt_style"
+                    android:hint="취급품목을 입력해주세요"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"/>
+            </RelativeLayout>
+
+            <!-- 대표전화 -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="대표전화"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:id="@+id/sign_up_edt_call_number"
+                    android:textColor="@color/color_454545"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_solid"
+                    android:layout_centerVertical="true"
+                    style="@style/edt_style"
+                    android:hint="전화번호를 입력해주세요"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"/>
+            </RelativeLayout>
+
+            <!-- 주소 -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="주소"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:id="@+id/sign_up_edt_address"
+                    android:textColor="@color/color_454545"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_solid"
+                    android:layout_centerVertical="true"
+                    style="@style/edt_style"
+                    android:hint="주소를 입력해주세요"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"/>
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="17dp"
+                android:background="#bbbbbb"/>
+
+            <!-- 정산일선택 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="정산일선택"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+                android:orientation="vertical"
+                android:paddingRight="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/signup_chk_5_day"
+                        style="@style/txt_style_medium"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClick"
+                        android:button="@drawable/sel_radio"
+                        android:checked="true"
+                        android:paddingLeft="8dp"
+                        android:text="5일입금"
+                        android:textColor="@color/color_454545"
+                        android:textSize="14dp" />
+
+
+                    <CheckBox
+                        android:id="@+id/signup_chk_next_1"
+                        style="@style/txt_style_medium"
+                        android:onClick="onClick"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.3"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/sel_radio"
+                        android:paddingLeft="8dp"
+                        android:text="익일입금(1%추가)"
+                        android:textColor="@color/color_454545"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/signup_chk_now"
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/sel_radio"
+                    android:onClick="onClick"
+                    android:paddingLeft="8dp"
+                    android:text="바로정산(1초정산, 1%추가)"
+                    android:textColor="@color/color_454545"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="12dp"
+                    android:textColor="#999999"
+                    android:lineSpacingExtra="13sp"
+                    android:text="*입금일은 카드사 영업일 기준입니다"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="17dp"
+                android:background="#bbbbbb"/>
+
+            <!-- 1회 결제한도 선택 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="1회 결제한도 선택"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+                android:orientation="vertical"
+                android:paddingRight="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:onClick="onClick"
+                        android:id="@+id/signup_chk_50man"
+                        style="@style/txt_style_medium"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/sel_radio"
+                        android:checked="true"
+                        android:paddingLeft="8dp"
+                        android:text="~50만원"
+                        android:textColor="@color/color_454545"
+                        android:textSize="14dp" />
+
+
+                    <CheckBox
+                        android:onClick="onClick"
+                        android:id="@+id/signup_chk_150man"
+                        style="@style/txt_style_medium"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.3"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/sel_radio"
+                        android:paddingLeft="8dp"
+                        android:text="150만원(0.5% 추가)"
+                        android:textColor="@color/color_454545"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:onClick="onClick"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/signup_chk_300man"
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/sel_radio"
+                    android:paddingLeft="8dp"
+                    android:text="~300만원(0.5% 추가)"
+                    android:textColor="@color/color_454545"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="12dp"
+                    android:textColor="#999999"
+                    android:lineSpacingExtra="13sp"
+                    android:text="*보증보험 금액은 1,000만원 이며 본사에서 연락드립니다."/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="17dp"
+                android:background="#bbbbbb"/>
+
+            <!-- 최종수수료 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="최종수수료(VAT 별도)"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:textColor="@color/red"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_disable"
+                    android:layout_centerVertical="true"
+                    style="@style/edt_style"
+                    android:inputType="text"
+                    android:enabled="false"
+                    android:lines="1"
+                    android:textSize="13dp"
+                    android:text="3.50%"
+                    android:maxLines="1"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="17dp"
+                android:background="#bbbbbb"/>
+
+            <!-- 최종수수료 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="결제 한도 안내"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:textColor="@color/color_454545"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_disable"
+                    android:layout_centerVertical="true"
+                    style="@style/edt_style"
+                    android:inputType="text"
+                    android:enabled="false"
+                    android:lines="1"
+                    android:textSize="13dp"
+                    android:text="일 : 300만원"
+                    android:maxLines="1"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:textColor="@color/color_454545"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_disable"
+                    android:layout_centerVertical="true"
+                    style="@style/edt_style"
+                    android:inputType="text"
+                    android:enabled="false"
+                    android:lines="1"
+                    android:textSize="13dp"
+                    android:text="월 : 1,000만원"
+                    android:maxLines="1"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:textColor="@color/color_454545"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_disable"
+                    android:layout_centerVertical="true"
+                    style="@style/edt_style"
+                    android:inputType="text"
+                    android:enabled="false"
+                    android:lines="1"
+                    android:textSize="13dp"
+                    android:text="년 : 12,000만원"
+                    android:maxLines="1"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="12dp"
+                    android:textColor="#999999"
+                    android:text="*사업자 월, 년 결제 한도 증액 시 본사로 문의 바립니다."/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="#bbbbbb"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:background="@color/mainBlueColor"
+                    style="@style/txt_style_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="normal"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="회원가입 완료"/>
+
+            </RelativeLayout>
+
+
+
         </LinearLayout>
+
+
+
 
     </ScrollView>
 
