@@ -29,7 +29,7 @@ public class API_Adapter {
     public static final int CONNECT_TIMEOUT = 15;
     public static final int WRITE_TIMEOUT = 15;
     public static final int READ_TIMEOUT = 15;
-    public static final String SERVER_URL = "https://www.paintinfo.co.kr";
+    public static final String SERVER_URL = "http://appgmg.gmgpayment.com";
 
 
     public static final MediaType JSON = MediaType.parse("application/json");

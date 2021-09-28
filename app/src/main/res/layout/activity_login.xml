@@ -19,6 +19,7 @@
             android:background="@drawable/gmgyo"/>
 
         <EditText
+            android:id="@+id/login_edt_id"
             android:layout_marginTop="40dp"
             android:layout_width="match_parent"
             android:layout_height="45dp"
@@ -26,11 +27,13 @@
             android:layout_centerVertical="true"
             style="@style/edt_style"
             android:hint="대리점ID"
+            android:text="GP17302252"
             android:inputType="text"
             android:lines="1"
             android:maxLines="1"/>
 
         <EditText
+            android:id="@+id/login_edt_pw"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="45dp"
@@ -40,9 +43,12 @@
             android:hint="비밀번호"
             android:inputType="textPassword"
             android:lines="1"
+            android:text="123456"
             android:maxLines="1"/>
 
         <LinearLayout
+            android:id="@+id/login_layout_auto"
+            android:onClick="onClick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -52,6 +58,7 @@
                 android:id="@+id/login_chk_auto"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:checked="true"
                 android:background="@drawable/sel_btn_check_box"
                 android:button="@null" />
 
@@ -68,6 +75,8 @@
 
 
         <RelativeLayout
+            android:id="@+id/login_btn_go"
+            android:onClick="onClick"
             android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
