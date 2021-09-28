@@ -113,6 +113,14 @@
                 android:layout_marginBottom="17dp"
                 android:background="#bbbbbb"/>
 
+            <!-- 휴대폰 번호 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -130,7 +138,330 @@
                     android:text="휴대폰번호"/>
 
             </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
 
+                <EditText
+                    android:layout_toLeftOf="@id/signup_btn_authcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_solid"
+                    android:layout_centerVertical="true"
+                    style="@style/edt_style"
+                    android:hint="휴대폰번호를 입력해주세요(‘-’제외)"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"/>
+
+                <RelativeLayout
+                    android:id="@+id/signup_btn_authcode"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:background="@color/color_333333"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        style="@style/txt_style_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13dp"
+                        android:textColor="@color/white"
+                        android:text="인증번호 받기"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <!-- 인증 번호 -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="인증번호"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:layout_toLeftOf="@id/signup_btn_authcode_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_solid"
+                    android:layout_centerVertical="true"
+                    style="@style/edt_style"
+                    android:hint="인증번호"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"/>
+
+                <RelativeLayout
+                    android:id="@+id/signup_btn_authcode_confirm"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:background="@color/mainBlueColor"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        style="@style/txt_style_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13dp"
+                        android:textColor="@color/white"
+                        android:text="확인"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <!-- 이름 -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="이름"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:textColor="@color/mainBlueColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_solid"
+                    android:layout_centerVertical="true"
+                    style="@style/edt_style"
+                    android:hint="이름"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"/>
+
+            </RelativeLayout>
+
+            <!-- 주민번호 앞자리 -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="주민번호 앞자리"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:textColor="@color/mainBlueColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_solid"
+                    android:layout_centerVertical="true"
+                    style="@style/edt_style"
+                    android:hint="주민번호 앞자리"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:lines="1"
+                    android:maxLines="1"/>
+
+            </RelativeLayout>
+
+            <!-- 영업점선택 -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="영업점선택"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:textColor="@color/mainBlueColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_disable"
+                    android:layout_centerVertical="true"
+                    android:text="주식회사유니코아"
+                    style="@style/edt_style"/>
+
+            </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="17dp"
+                android:background="#bbbbbb"/>
+
+            <!-- 사업자선택 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="사업자선택"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/rg_btn_food_material"
+                        style="@style/txt_style_medium"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/sel_radio"
+                        android:checked="true"
+                        android:paddingLeft="8dp"
+                        android:text="사업자"
+                        android:textColor="@color/color_454545"
+                        android:textSize="14dp" />
+
+
+                    <RadioButton
+                        android:id="@+id/rg_btn_store"
+                        style="@style/txt_style_medium"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/sel_radio"
+                        android:paddingLeft="8dp"
+                        android:text="비사업자"
+                        android:textColor="@color/color_454545"
+                        android:textSize="14dp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <!-- 사업자번호 -->
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/txt_style_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#252525"
+                    android:text="사업자번호"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <EditText
+                    android:textColor="@color/mainBlueColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_border_solid"
+                    android:layout_centerVertical="true"
+                    style="@style/edt_style"
+                    android:hint="사업자번호"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"/>
+
+            </RelativeLayout>
         </LinearLayout>
 
     </ScrollView>
